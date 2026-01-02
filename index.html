@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>박은별 - 포트폴리오</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@800&family=Noto+Sans+KR:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --bg-color: #f7f3ed;
+      --text-primary: #1a1a1a;
+      --accent-glow: rgba(255, 140, 80, 0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Noto Sans KR", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* 배경 글로우 효과 */
+    .background-glow {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: radial-gradient(circle at center,
+          var(--accent-glow) 0%,
+          transparent 70%);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* 미세한 수평 라인 텍스처 (이미지 참고) */
+    .background-texture {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.02) 1px,
+          transparent 1px);
+      background-size: 100% 4px;
+      z-index: 0;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    .container {
+      text-align: center;
+      z-index: 1;
+      cursor: pointer;
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .container:hover {
+      transform: scale(1.02);
+    }
+
+    h1 {
+      font-family: "Outfit", sans-serif;
+      font-size: 8rem;
+      font-weight: 800;
+      letter-spacing: -2px;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      animation: fadeInDown 1.2s ease-out;
+    }
+
+    .subtitle {
+      font-size: 2.5rem;
+      font-weight: 400;
+      letter-spacing: 5px;
+      opacity: 0.8;
+      animation: fadeInUp 1.2s ease-out 0.2s both;
+    }
+
+    .cta-hint {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      font-weight: 300;
+      letter-spacing: 2px;
+      opacity: 0.4;
+      animation: fadeIn 2s ease-in 1s both;
+      text-transform: uppercase;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 0.4;
+      }
+    }
+
+    /* 반응형 */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 4rem;
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background-texture"></div>
+  <div class="background-glow"></div>
+
+  <a href="portfolio.html" class="container">
+    <h1>PORTFOLIO</h1>
+    <div class="subtitle">포트폴리오</div>
+    <div class="cta-hint">Click to Enter</div>
+  </a>
+</body>
+
+</html>
