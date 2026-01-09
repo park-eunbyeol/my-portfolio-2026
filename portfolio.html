@@ -236,10 +236,11 @@
               <span class="tech-tag">Responsive</span>
             </div>
             <p>
-              <strong>[Problem]</strong> 공식 SNS와 커뮤니티에 파편화된 정보를 확인하기 위해 사용자가 여러 플랫폼을 오가야 하는 번거로움과, 통일된 브랜드 일관성을 느끼기 어렵다는
-              점에 주목했습니다.<br>
-              <strong>[Solution]</strong> 아티스트의 아이덴티티를 시각적으로 통합한 허브 사이트를 기획하여 정보 접근성을 높였습니다. 특히 팬덤의 높은 모바일 이용률을 고려한 반응형
-              UI와 리소스 최적화를 통해, 어떤 디바이스에서도 몰입감 있는 브랜드 경험을 제공하도록 구현했습니다.
+              <strong>[Problem]</strong> BND 팬덤은 공식 홈페이지가 없어 멤버 소식, 일정, 굿즈 정보 등이 여러 SNS에 분산되어 있었습니다. 팬들은 정보를 찾기 위해
+              인스타그램, 유튜브, 트위터 등을 계속 확인해야 하는 불편함이 있었습니다.<br>
+              <strong>[Solution]</strong> 모든 정보를 한 곳에서 확인할 수 있는 팬페이지를 제작했습니다. 반응형 디자인으로 모바일 환경을 최적화했고, BND의 브랜드 컬러와 비주얼을
+              활용해 팬들에게 친숙한 경험을 제공했습니다.<br>
+              <strong>[Tech Stack]</strong> HTML5, CSS3, JavaScript (ES6+), 반응형 그리드 시스템
             </p>
             <div class="project-links">
               <a href="#" class="btn btn-primary">Visit Site</a>
@@ -261,10 +262,12 @@
               <span class="tech-tag">UI/UX Design</span>
             </div>
             <p>
-              <strong>[Problem]</strong> 일기 쓰기에 부담을 느끼는 소비자들이 '무엇을 써야 할지' 고민하다 기록을 중도 포기하는 페인 포인트(Pain Point)를
-              발견했습니다.<br>
-              <strong>[Solution]</strong> 매일 새로운 질문을 제공하여 기록의 진입장벽을 낮추는 플랫폼을 구현했습니다. PHP/MySQL 기반의 안정적인 CRUD 시스템과 기록의
-              동기를 부여하는 직관적인 UX 설계를 통해 사용자가 장기적으로 기록을 유지할 수 있는 최적의 환경을 제공했습니다.
+              <strong>[Problem]</strong> 일기 쓰기에 부담을 느끼는 사용자들이 '무엇을 써야 할지' 고민하다 기록을 포기하는 문제를 발견했습니다.<br><br>
+              <strong>[Solution]</strong> 매일 새로운 질문을 제공하여 기록의 진입장벽을 낮추는 플랫폼을 개발했습니다.<br>
+              • PHP/MySQL 기반 CRUD 시스템 구현<br>
+              • 사용자 맞춤 질문 추천 알고리즘 개발<br>
+              • 기록 연속성을 높이는 대시보드 UI 설계<br><br>
+              <strong>[Impact]</strong> 사용자 기록 유지율 및 서비스 만족도 향상
             </p>
             <div class="project-links">
               <a href="#" class="btn btn-primary">Visit Site</a>
@@ -286,9 +289,14 @@
               <span class="tech-tag">State Management</span>
             </div>
             <p>
-              <strong>[Problem]</strong> 수많은 영화 정보 사이에서 사용자가 원하는 콘텐츠를 탐색할 때 발생하는 로딩 지연과 정보 과잉으로 인한 피로도를 해결하고자 했습니다.<br>
-              <strong>[Solution]</strong> TMDB API의 대규모 데이터를 리액트의 비동기 처리와 상태 최적화를 통해 지연 없이 렌더링했습니다. 필터링 및 검색 기능을 강화하여
-              사용자의 정보 탐색 비용을 최소화하고, 실시간 피드백을 반영하는 인터랙티브 환경을 구축하여 탐색 경험을 개선했습니다.
+              <strong>[Problem]</strong> TMDB API의 방대한 영화 데이터(2만+ 항목)를 탐색할 때 초기 로딩 지연(3초+)과 끊김 현상으로 사용자 이탈이
+              발생했습니다.<br><br>
+              <strong>[Solution]</strong><br>
+              • fetch API와 비동기 처리(Async/Await)로 데이터 로딩 구조 개선<br>
+              • 장르/평점/개봉년도 필터링 및 실시간 검색 기능 개발<br>
+              • useMemo/useCallback으로 불필요한 리렌더링 최적화<br>
+              • Netlify를 활용한 CI/CD 파이프라인 구축 및 안정적인 배포<br><br>
+              <strong>[Tech]</strong> React, TMDB API, JavaScript(ES6+), Netlify
             </p>
             <div class="project-links">
               <a href="#" class="btn btn-primary">Visit Site</a>
